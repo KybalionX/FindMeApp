@@ -104,9 +104,10 @@ public class Feed extends Fragment {
                     String descripcion = jsonArray.getJSONObject(i).optString("descripcion");
 
                     String fecha = jsonArray.getJSONObject(i).optString("fecha");
-                    String ciudad = jsonArray.getJSONObject(i).getJSONArray("location").getJSONObject(0).optString("ciudad");
-                    String departamento = jsonArray.getJSONObject(i).getJSONArray("location").getJSONObject(0).optString("departamento");
-                    String pais = jsonArray.getJSONObject(i).getJSONArray("location").getJSONObject(0).optString("pais");
+
+                    String ciudad = jsonArray.getJSONObject(i).optString("ciudad");
+                    String departamento = jsonArray.getJSONObject(i).optString("departamento");
+                    String pais = jsonArray.getJSONObject(i).optString("pais");
 
                     boolean liked=false;
 
