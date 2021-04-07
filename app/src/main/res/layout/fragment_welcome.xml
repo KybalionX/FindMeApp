@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Welcome">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9A000000" />
+
+    <RelativeLayout
+        android:id="@+id/LayoutContainerFragmentWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            >
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="80px"
+                    android:layout_marginRight="8dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/dog" />
+
+                <TextView
+                    style="@style/TextAppearance.MaterialComponents.Headline4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Find.Me"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_marginTop="8dp"
+                style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:textColor="#ACACAC"
+                android:layout_height="wrap_content"
+                android:text="Encuentra tu mascota"
+                />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="18dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.gms.common.SignInButton
+                app:buttonSize="icon_only"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textButton"
+                />
+
+            <Button
+                android:id="@+id/btnNuevoUsuario"
+                style="@style/FindMaterial.Buttons.NormalButton.Light"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Nuevo Usuario" />
+
+            <View
+                android:layout_width="320dp"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/btnIniciarSesion"
+                style="@style/FindMaterial.Buttons.NormalButton.Light"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Iniciar Sesión" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="FindMaterial.BottomNavigation.Dark" parent="Widget.MaterialComponents.BottomNavigationView.Colored">>
+        <item name="backgroundTint">@color/colorAccent</item>
+        <item name="itemTextColor">@color/colorPrimaryDark</item>
+        <item name="itemIconTint">@color/colorPrimary</item>
+    </style>
+
+    <style name="FindMaterial.Buttons.NormalButton.Light" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="FindMaterial.Buttons.NormalButton.Dark" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+
+    <style name="FindMaterial.ProgressDialog.Normal" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="titleTextColor">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+
+    <style name="FindMaterial.Buttons.Icon.Light" parent="Widget.MaterialComponents.Button.Icon">
+        <item name="iconTint">#FFF</item>
+        <item name="backgroundTint">@color/colorPrimary</item>
+    </style>
+
+    <style name="FindMaterial.Buttons.Icon.Dark" parent="Widget.MaterialComponents.Button.Icon">
+        <item name="iconTint">@color/colorPrimary</item>
+        <item name="backgroundTint">@color/colorAccent</item>
+    </style>
+
+
+</resources>

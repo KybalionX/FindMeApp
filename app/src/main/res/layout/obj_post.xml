@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="@color/colorAccentLight"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:paddingTop="8dp"
+            android:paddingHorizontal="8dp"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            >
+            <com.kiprotich.japheth.image.ProfileImage
+                android:id="@+id/profileImage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_toStartOf="@+id/btnBackIniciarSesion"
+                android:layout_toEndOf="@id/profileImage"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nombreUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="Username"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textColor="#FFF" />
+
+
+                <!-- android:textColor="?android:attr/textColorSecondary" -->
+                <TextView
+                    android:id="@+id/categoria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:lines="1"
+                    android:text="Username"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="#CACACA" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnShare"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="0dp"
+                android:insetLeft="0dp"
+                android:insetTop="3dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:padding="0dp"
+                app:icon="@drawable/ic_share"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Circle" />
+
+
+
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:id="@+id/recyclerImagenes"
+            />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            >
+
+
+            <net.colindodd.toggleimagebutton.ToggleImageButton
+                android:id="@+id/btnLike"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                app:tib_drawable_off="@drawable/ic_like_off"
+                app:tib_drawable_on="@drawable/ic_like_on" />
+
+            <TextView
+                android:textColor="#FFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/btnLike"
+                android:id="@+id/textLikes"
+                android:text="777" />
+
+            <ImageButton
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/textLikes"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/btnComentario"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@null"
+                android:src="@drawable/ic_comentario" />
+
+            <TextView
+
+                android:textColor="#FFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/btnComentario"
+                android:id="@+id/textComentarios"
+                android:text="777" />
+
+            <ru.tinkoff.scrollingpagerindicator.ScrollingPagerIndicator
+                android:id="@+id/indicatorImages"
+                app:spi_dotSelectedColor="@color/colorPrimary"
+                app:spi_dotColor="#DCDCDC"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/descripcion"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:text="Hexadis Polaris"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/fecha"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="18dp"
+            android:text="99/99/9999"
+            android:textColor="#A6A6A6" />
+
+    </LinearLayout>
+
+
+
+
+</com.google.android.material.card.MaterialCardView>

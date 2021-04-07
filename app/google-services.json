@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "412488926432",
+    "project_id": "findme-1bf66",
+    "storage_bucket": "findme-1bf66.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:412488926432:android:45f663223c3785c0ba7c85",
+        "android_client_info": {
+          "package_name": "com.dvlpr.findme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "412488926432-hhr4vk3e4gbpl8enr7qg8vd2h0ff70kl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dvlpr.findme",
+            "certificate_hash": "fd60733d922e38ed2d3c8a794b78636aee25c30c"
+          }
+        },
+        {
+          "client_id": "412488926432-ahfrov1q67a8vicdihqqg5d2r21hirrt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg8NtobziAFKRql67FBMTRny5PMM0xBMM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "412488926432-ahfrov1q67a8vicdihqqg5d2r21hirrt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

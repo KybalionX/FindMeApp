@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.User">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="12dp"
+            android:layout_centerHorizontal="true"
+            style="@style/TextAppearance.MaterialComponents.Headline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Find.Me"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/textLogo"
+            android:textStyle="bold" />
+
+        <com.kiprotich.japheth.image.ProfileImage
+            android:id="@+id/profileImageUser"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/textLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:src="@drawable/profile_picture_blank"
+            app:civ_border_color="#CACACA" />
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:textColor="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profileImageUser"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:text="userName" />
+
+        <TextView
+            android:id="@+id/tvUserID"
+            android:textColor="#CACACA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvUserName"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:text="userID" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerPostUser"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvUserID"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>

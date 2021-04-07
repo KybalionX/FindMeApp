@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".Comentarios">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerComentarios"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cardComentario" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardComentario"
+        app:cardCornerRadius="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorAccentLight"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="4dp"
+            android:padding="4dp">
+
+            <com.kiprotich.japheth.image.ProfileImage
+                android:id="@+id/profileImageUser"
+                android:layout_centerVertical="true"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_below="@+id/textLogo"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/profile_picture_blank"
+                app:civ_border_color="#CACACA" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_toStartOf="@+id/textButton"
+                android:layout_toEndOf="@+id/profileImageUser"
+                android:hint="Agregar un comentario..."
+                android:textColorHint="#FFF"
+                app:boxBackgroundColor="@color/colorAccentLight">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputComentario"
+                    android:textColor="#FFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/postComentario"
+                android:layout_centerVertical="true"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/colorPrimary"
+                android:text="Post" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>
